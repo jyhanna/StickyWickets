@@ -1,0 +1,5 @@
+<launch>
+	<node name="object_detector" pkg="sticky_wickets" type="object_detect.py"/>
+	<node name="sign_handler" pkg="sticky_wickets" type="sign_handler.py"/>
+	<node name="hopless_wanderer" pkg="sticky_wickets" type="mover.py"/>
+</launch>

@@ -1,0 +1,10 @@
+<launch>
+  <machine name="remote_host" address="$(arg ip)" user="$(arg user)"/>
+  <include file="$(find turtlebot_rviz_launchers)/launch/view_navigation.launch"/>
+  <node name="image_view1" pkg="image_view" type="image_view" respawn="false" output="screen">
+    <remap from="image" to="/sticky_wickets/object/image"/>
+  </node>
+  <node name="image_view2" pkg="image_view" type="image_view" respawn="false" output="screen">
+    <remap from="image" to="/sticky_wickets/sign/map"/>
+  </node>
+</launch>
