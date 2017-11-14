@@ -18,10 +18,10 @@ Launch files (in launch sequence):
 Quickstart:
 
 1. Ensure you have the sticky_wickets package on your workstation AND turtlebot. 
-2. If using the provided map in the sticky_wickets/map/ directory, place the turtlebot in the CROCHET hallway, near the lab. 
-3. Set up signs around the turtlebot. Current detected colors are green, orange, and blue. Detected shapes are circles, triangles, and squares. We have made some signs already using colored stickers. They should be in CROCHET. 
-4. On the TURTLEBOT, run the core minimal and navigation requirements using the launch file core.launch with the yaml file provided in the package: 
-    1. roslaunch sticky_wickets core.launch map:=/home/turtlebot/catkin_ws/src/sticky_wickets/map/crochet_hall.yaml 
+2. You may put your maps in the sticky_wickets/map/ directory.
+3. Set up signs around the turtlebot. Current detected colors are green, orange, and blue. Detected shapes are circles, triangles, and squares. We have made some signs already using colored stickers. 
+4. On the TURTLEBOT, run the core minimal and navigation requirements using the launch file core.launch with the yaml file for your desired map. Do not forget to edit your yaml to ensure it points to the PGM in the correct directory: 
+    1. roslaunch sticky_wickets core.launch map:=/your/map.yaml 
 
 5. On the WORKSTATION, run the viewing.launch file, which runs rviz and image_views subscribing to the topics we will publish from our nodes: 
     1. roslaunch sticky_wickets viewing.launch 
