@@ -1,6 +1,10 @@
+This package project provides a way to supplement map-based navigation on ROS using basic visual cues. These visual supplementations
+are basic shapes with solid colors that can be detected by an on-board webcam. Once detected these signs can then be reacted to
+by the TurtleBot.
+
 Setup requirements:
 
-1. Download sticky_wickets package folder from google drive into your catkin_ws on your local computer and the turtlebot. 
+1. Download sticky_wickets package folder into your catkin_ws on your workstation and the turtlebot. 
 2. Ensure the network between the turtlebot and your workstation is setup properly. 
   
 
